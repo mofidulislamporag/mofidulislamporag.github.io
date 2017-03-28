@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>PORAG</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+<style type="text/css">
+
+
+</style>
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["email"].value;
+    var atpos = x.indexOf("@");
+    var dotpos = x.lastIndexOf(".");
+    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+        alert("Not a valid e-mail address");
+        return false;
+    }
+}
+</script>
+  </head>
+  <body data-spy="scroll" data-target="#mycollapae"> 
+<div class="container-fluid">
+<nav class="navbar navbar-default navbar-fixed-top">  
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mycollapae" aria-expanded="false">
+        <span class="sr-only">menu</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+
+
+      </button>
+      <a class="navbar-brand" href="#Home">PORAG</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="mycollapae">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="">HOME</a></li>
+        
+         <li><a href="#SERVICE">SERVICE</a></li>
+          <li><a href="#myskills">SKILLS</a></li>
+           <li><a href="#">PORTFELIO</a></li>
+           <li><a href="#about">ABOUT ME</a></li>
+            <li><a href="#contact">CONTACT ME</a></li>
+        
+      </ul> 
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!--caurosel-->
+<div class="home">
+<div id="carousel-example-generic" id="Home" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+   
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="img/slider.png" alt="...">
+      <div class="carousel-caption">
+        <h3>Md. Mafidul Islam porag</h3>
+        <p>Web Dveloper/Web Designner</p>
+      </div>
+    </div>
+  
+        <div class="item">
+      <img src="img/1.jpg" alt="...">
+      <div class="carousel-caption">
+       <h3>Md. Mafidul Islam porag</h3>
+        <p>Web Dveloper/Web Designner</p>
+      </div>
+    </div>  
+      <div class="item">
+      <img src="img/slider3.jpg" alt="...">
+      <div class="carousel-caption">
+        <h3>Md. Mafidul Islam porag</h3>
+        <p>Web Dveloper/Web Designner</p>
+      </div>
+    </div>
+<p>The Importance of Web Developmrnt Promote your online Business</p>
+    
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+
+<!--Thumnail-->
+<div class="service">
+<div class="well" id="SERVICE">
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="img/wordpress development.jpg" alt="...">
+      <div class="caption">
+        <h3>Web Development/Design</h3>
+        <p>The best website highlights you or your business.</p>
+        <p><a href="#" class="btn btn-primary" role="button"  data-toggle="modal" data-target="#mymodal">READE MORE</a> </p>
+      </div>
+    </div>
+  </div>
+
+
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="img/javascript framework .jpg" class="slider6" alt="...">
+      <div class="caption">
+        <h3>Front-end Development</h3>
+        <p>It is more beautiful in your website and dynamic.</p>
+        <p><a href="#" class="btn btn-primary" role="button"  data-toggle="modal" data-target="#mymodal1">READE MORE</a></p>
+      </div>
+    </div>
+  </div>
+
+
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="img/wordpress development.jpg" alt="...">
+      <div class="caption">
+        <h3>Back-end Development</h3>
+        <p>It is data access layer in your website.</p>
+        <p><a href="#" class="btn btn-primary" role="button"  data-toggle="modal" data-target="#mymodal2">READE MORE</a> </p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!--Modal-->
+<div class="modal fade" tabindex="-1" role="dialog" id="mymodal" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <p>One fine body&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" tabindex="-1" role="dialog" id="mymodal1" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <p>One fine body&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+       
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<div class="modal fade" tabindex="-1" role="dialog" id="mymodal2" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <p>One fine body&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="row" id="myskills"><!--MY skills-->
+<h2 class="text-center custom"> My Skills</h2>
+  <div class="col-md-6">
+  <h3 class="text-center">Front-end Development</h3>
+  <div class="progress">
+  <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 85%">
+    <span class="sr-only">90% Complete (danger)</span>
+  </div>
+  <p class="text-right">HTML/CSS</p>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+    <span class="sr-only"> 80% Complete</span>
+  </div>  <p class="text-right">BOOTSTRAP/SEMANTIC UI</p>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+    <span class="sr-only">75% Complete (warning)</span>
+  </div>  <p class="text-right">JQUERY</p>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+    <span class="sr-only">80% Complete (danger)</span>
+  </div>  <p class="text-right">JAVASCRIPT/AJAX</p>
+</div></div>
+
+
+<h3 class="text-center">Back-end Development</h3>
+  <div class="col-md-6"><div class="progress">
+  <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%">
+    <span class="sr-only">85% Complete (danger)</span>
+  </div>  <p class="text-right">HTML/CSS</p>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+    <span class="sr-only">80% Complete</span>
+  </div>  <p class="text-right">PHP</p>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+    <span class="sr-only">75% Complete (warning)</span>
+  </div>  <p class="text-right">MYSQL</p>
+</div>
+</div>
+</div>
+
+
+<div class="well" id="about">
+  <h2 class="text-center">Who am I?</h2>
+  <div class="row">
+  <div class="col-md-4">
+  <div id="carousel-example" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example" data-slide-to="1"></li>
+    <li data-target="#carousel-example" data-slide-to="2"></li>
+
+
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="img/porag.jpg" alt="...">
+
+    </div>
+    <div class="item">
+      <img src="img/porag2.jpg" alt="...">
+  
+    </div>
+        <div class="item">
+      <img src="img/porag3.jpg" alt="...">
+    </div>     
+  </div>
+</div>
+</div>
+
+
+  <div class="col-md-8"><h4>Hello, I am Mafidul Islam Porag.I am study Daffodill International Univesiy BSC in CSE.I lives in Asulia,Dhaka.
+I like science.I like to see scienfiction movie and read blog. I am a professional web developer and designer.I am create your personal and business website.I am learn about web developing about two years.I work hard to provide my projects for you and 
+   my clients.</h4></div>
+</div>
+</div>
+
+<h3 class="text-center" id="contact">CONTACT ME</h3>
+<div class="col-md-6">
+  <address>
+
+<table class="table">
+  <tr>
+  <td>  <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></td>
+    <th>Email:</th>
+    <th>porag@mdporag.me</th>
+  </tr>
+  <tr>
+   <td>  <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></td>
+    <td>Phone:</td>
+    <td>01834418984</td>
+  </tr>
+  <tr>
+   <td class=""><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span></td>
+    <td>Address:</td>
+    <td>Asulia,savar,Dhaka</td>
+  </tr>
+</table>
+
+
+</address>
+</div>
+
+<div class="col-md-6">
+  <form name="myForm" action="" onsubmit="return validateForm(); method="post">
+    <div class="form-group">
+    <label for="exampleInputName2">Name</label>
+    <input type="text" class="form-control" id="exampleInputName2" placeholder="Name">
+  </div>
+     <div class="form-group">
+    <label for="exampleInputName2">Subject</label>
+    <input type="text" class="form-control" id="exampleInputName2" placeholder="Any Topic">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="text" name="email" class="form-control" id="Email" placeholder="Email">
+  </div>
+    <div class="form-group">
+    <label for="exampleInputEmail1">Send Message</label>
+    <textarea name="message" id="message" placeholder="Message" cols="20" rows="10" class="form-control"></textarea>
+  </div>
+
+  <button type="submit" value="submit" class="btn btn-info">Send</button>
+</form
+ </div>
+
+</div><!--container end-->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
